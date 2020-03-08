@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<resources>
+
+    <string name="title_homeActivity">title</string>
+    <string name="feedback_title">feedback_title</string>
+    <string name="submit">submit</string>
+    <string name="feedback_cancel_text">feedback_cancel_text</string>
+    <string name="intro_welcome_title">intro_welcome_title</string>
+    <string name="intro_welcome_body">intro_welcome_body</string>
+    <string name="app_name">front cource test</string>
+    <string name="search">search</string>
+</resources>
