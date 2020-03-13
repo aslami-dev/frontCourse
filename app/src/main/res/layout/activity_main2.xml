@@ -12,7 +12,6 @@
         android:gravity="center"
         android:text="hello my git"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="42sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
