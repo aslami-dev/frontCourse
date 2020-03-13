@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/colorAccent"
     android:layout_height="match_parent">
 
     <TextView
@@ -21,7 +22,7 @@
         android:gravity="center"
         android:text="hello git too"
         android:textColor="@color/colorPrimary"
-        android:textSize="40sp"
+        android:textSize="20sp"
         app:layout_constraintVertical_bias="0.7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
