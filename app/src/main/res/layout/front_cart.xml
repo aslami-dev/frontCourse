@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/tv_Cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_search"
+        android:drawableTint="#474559"
+        android:fontFamily="@font/mont_extralightdemo"
+        android:gravity="center"
+        android:paddingLeft="32dp"
+        android:paddingRight="24dp"
+        android:text="Cart"
+        android:textAllCaps="false"
+        android:textColor="#474559"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <LinearLayout
+        android:id="@+id/LayoutAverage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="18dp"
+        android:gravity="left"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/tv_Cart">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mont_extralightdemo"
+            android:text="3 items available"
+            android:textColor="#111111"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/background_cart"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/img_Bag1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bag1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_Handbag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Handbag"
+                android:fontFamily="@font/mont_extralightdemo"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:padding="6dp"
+                android:textColor="#111111"
+                app:layout_constraintStart_toEndOf="@id/img_Bag1"
+                app:layout_constraintBottom_toTopOf="@id/tv_Store"/>
+            <TextView
+                android:id="@+id/tv_Store"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="from boots category"
+                android:textColor="#A1A1B4"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/img_Bag1"/>
+
+            <TextView
+                android:id="@+id/tv_OffPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mont_extralightdemo"
+                android:padding="8dp"
+                android:text="$100"
+                android:textColor="#111111"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/img_Bag1"
+                app:layout_constraintTop_toBottomOf="@id/tv_Store" />
+
+            <TextView
+                android:id="@+id/tv_Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$250"
+                android:fontFamily="@font/mont_extralightdemo"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:textColor="#A1A1B4"
+                app:layout_constraintTop_toBottomOf="@id/tv_Store"
+                app:layout_constraintStart_toEndOf="@id/tv_OffPrice"
+                />
+            <view
+                android:layout_width="48dp"
+                android:layout_height="1dp"
+                android:background="#A1A1B4"
+                app:layout_constraintEnd_toEndOf="@id/tv_Price"
+                app:layout_constraintStart_toStartOf="@id/tv_Price"
+                app:layout_constraintBottom_toBottomOf="@id/tv_Price"
+                app:layout_constraintTop_toTopOf="@id/tv_Price"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_Price">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/negative_momma"
+                    android:background="0"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:text="2"
+                    android:textColor="#111111"
+                    android:textSize="18sp" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/plus_momma"
+                    android:background="0"/>
+            </LinearLayout>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cancel_momma"
+                android:background="0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/background_cart"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/img_Bag2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bag2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_Backpack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Backpack"
+                android:fontFamily="@font/mont_extralightdemo"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:padding="6dp"
+                android:textColor="#111111"
+                app:layout_constraintStart_toEndOf="@id/img_Bag2"
+                app:layout_constraintBottom_toTopOf="@id/tv_Store2"/>
+            <TextView
+                android:id="@+id/tv_Store2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="from boots category"
+                android:textColor="#A1A1B4"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/img_Bag2"/>
+
+            <TextView
+                android:id="@+id/tv_OffPrice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mont_extralightdemo"
+                android:padding="8dp"
+                android:text="$100"
+                android:textColor="#111111"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/img_Bag2"
+                app:layout_constraintTop_toBottomOf="@id/tv_Store2" />
+
+            <TextView
+                android:id="@+id/tv_Price2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$250"
+                android:fontFamily="@font/mont_extralightdemo"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:textColor="#A1A1B4"
+                app:layout_constraintTop_toBottomOf="@id/tv_Store2"
+                app:layout_constraintStart_toEndOf="@id/tv_OffPrice2"
+                />
+            <view
+                android:layout_width="48dp"
+                android:layout_height="1dp"
+                android:background="#A1A1B4"
+                app:layout_constraintEnd_toEndOf="@id/tv_Price2"
+                app:layout_constraintStart_toStartOf="@id/tv_Price2"
+                app:layout_constraintBottom_toBottomOf="@id/tv_Price2"
+                app:layout_constraintTop_toTopOf="@id/tv_Price2"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_Price2">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/negative_momma"
+                    android:background="0"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:text="2"
+                    android:textColor="#111111"
+                    android:textSize="18sp" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/plus_momma"
+                    android:background="0"/>
+            </LinearLayout>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cancel_momma"
+                android:background="0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/background_cart"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/img_Bag3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bag3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_Backpack3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Backpack"
+                android:fontFamily="@font/mont_extralightdemo"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:padding="6dp"
+                android:textColor="#111111"
+                app:layout_constraintStart_toEndOf="@id/img_Bag3"
+                app:layout_constraintBottom_toTopOf="@id/tv_Store2"/>
+            <TextView
+                android:id="@+id/tv_Store3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="from boots category"
+                android:textColor="#A1A1B4"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/img_Bag3"/>
+
+            <TextView
+                android:id="@+id/tv_OffPrice3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mont_extralightdemo"
+                android:padding="8dp"
+                android:text="$100"
+                android:textColor="#111111"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/img_Bag3"
+                app:layout_constraintTop_toBottomOf="@id/tv_Store3" />
+
+            <TextView
+                android:id="@+id/tv_Price3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$250"
+                android:fontFamily="@font/mont_extralightdemo"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:textColor="#A1A1B4"
+                app:layout_constraintTop_toBottomOf="@id/tv_Store3"
+                app:layout_constraintStart_toEndOf="@id/tv_OffPrice3"
+                />
+            <view
+                android:layout_width="48dp"
+                android:layout_height="1dp"
+                android:background="#A1A1B4"
+                app:layout_constraintEnd_toEndOf="@id/tv_Price3"
+                app:layout_constraintStart_toStartOf="@id/tv_Price3"
+                app:layout_constraintBottom_toBottomOf="@id/tv_Price3"
+                app:layout_constraintTop_toTopOf="@id/tv_Price3"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_Price3">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/negative_momma"
+                    android:background="0"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:text="2"
+                    android:textColor="#111111"
+                    android:textSize="18sp" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/plus_momma"
+                    android:background="0"/>
+            </LinearLayout>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cancel_momma"
+                android:background="0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

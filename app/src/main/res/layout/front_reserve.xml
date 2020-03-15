@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image_homeblur"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="18dp"
+        android:layout_weight="2"
+        android:background="@drawable/background_homelittle"
+        android:backgroundTint="#ffffff"
+        android:orientation="vertical"
+        android:weightSum="4.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="Number of Rooms"
+                android:textColor="#4d4d4d"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="48dp"
+                android:backgroundTint="#ffffff"
+                android:src="@drawable/ic_action_name3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="1"
+                android:textColor="#4d4d4d"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:backgroundTint="#ffffff"
+                android:src="@drawable/ic_action_name2" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#f3f3f3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="24dp"
+                android:text="Adult"
+                android:textColor="#4d4d4d"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="(Aged 18+)"
+                android:textColor="#4d4d4d"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft=""
+                android:backgroundTint="#ffffff"
+                android:src="@drawable/ic_action_name3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="2"
+                android:textColor="#4d4d4d"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <ImageButton
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight=""
+                android:backgroundTint="#ffffff"
+                android:src="@drawable/ic_action_name2" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#f3f3f3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="Children"
+                android:textColor="#4d4d4d"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="(0-17)"
+                android:paddingLeft="16dp"
+                android:textColor="#4d4d4d"
+                android:textSize="16dp" />
+
+            <ImageButton
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:backgroundTint="#ffffff"
+                android:src="@drawable/ic_action_name3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="24dp"
+                android:text="0"
+                android:textColor="#4d4d4d"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="29dp"
+                android:backgroundTint="#ffffff"
+                android:src="@drawable/ic_action_name2" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#f3f3f3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:weightSum="5">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/background_button"
+                android:gravity="center"
+                android:text="Apply"
+                android:textAllCaps="false"
+                android:textColor="#D2FFFE"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
