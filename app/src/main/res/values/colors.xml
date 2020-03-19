@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+ <color name="background">#1c1c1c</color>
+ <color name="background2">#fff</color>
+ <color name="colorTextBtm">#fff</color>
+ <color name="colorBottom">#3a41ee</color>
+ <color name="color_divider_open">#1c1c1c</color>
+ <color name="color_divider_close">#a4a4a4</color>
+ <color name="color_Btm_pressed">#1c1c1c</color>
+ <color name="color_btm_unpressed">#3a41ee</color>
+ <color name="color_textShop">#232323</color>
+ <color name="color_startLine">#dcdcdc</color>
+ <color name="color_endLine">#fff</color>
+ <color name="color_enableFooter">#fff</color>
+ <color name="color_realPrice">#3a41ee</color>
+ <color name="color_offPrice">#dfdfdf</color>
+ <color name="color_doShop">#3a41ee</color>
+ <color name="color_noShop">#fff</color>
+
 </resources>

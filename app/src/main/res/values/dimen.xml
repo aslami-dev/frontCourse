@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height_viewpager">10dp</dimen>
+    <dimen name="height_lineFooter">20dp</dimen>d
+    <dimen name="height_btmShop">48dp</dimen>d
+    ---------------------------------------
+    <dimen name="textSize_small">18sp</dimen>
+    <dimen name="textSize_standard">20sp</dimen>
+    <dimen name="textSize_medium">26sp</dimen>
+    <dimen name="textSize_big">34sp</dimen>
+    <dimen name="textSize_bigger">48sp</dimen>
+    ---------------------------------------
+    <dimen name="xsmall">8dp</dimen>
+    <dimen name="small">16dp</dimen>
+    <dimen name="avrage">18dp</dimen>
+    <dimen name="medium">26dp</dimen>
+    <dimen name="large">34dp</dimen>
+    <dimen name="Xlarge">48dp</dimen>
+    <dimen name="XXlarge">64dp</dimen>
+
+</resources>

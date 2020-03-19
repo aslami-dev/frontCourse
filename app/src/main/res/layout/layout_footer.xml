@@ -1,18 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/viewBottom"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="40dp"
-    android:background="@color/footer_color"
-    android:gravity="center"
-    android:orientation="horizontal"
-    android:weightSum="3">
-
+    android:layout_height="wrap_content">
 
     <View
-        android:layout_width="0dp"
-        android:layout_height="3dp"
-        android:layout_margin="5dp"
-        android:layout_weight="1"
-        android:background="@color/footerShape_color" />
-</LinearLayout>
+        android:id="@+id/view_lineFooter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_lineFooter"
+        android:background="@drawable/line_footer"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/view_lineFooter">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="0"
+            android:padding="@dimen/medium"
+            android:src="@drawable/ic_home" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="0"
+            android:padding="@dimen/medium"
+            android:src="@drawable/ic_favorite" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="0"
+            android:padding="@dimen/medium"
+            android:src="@drawable/ic_account" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="0"
+            android:padding="@dimen/medium"
+            android:src="@drawable/ic_settings" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_moodMen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fashionman"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_kindOfClothe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/small"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Jean Shirt"
+        android:textColor="@color/color_textShop"
+        android:textSize="@dimen/avrage"
+        app:layout_constraintStart_toEndOf="@id/img_moodMen"
+        app:layout_constraintTop_toTopOf="@id/img_moodMen" />
+
+    <TextView
+        android:id="@+id/tv_Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="$265.00"
+        android:textColor="@color/color_offPrice"
+        android:textSize="@dimen/textSize_small"
+        app:layout_constraintStart_toStartOf="@id/tv_kindOfClothe"
+        app:layout_constraintTop_toBottomOf="@id/tv_kindOfClothe" />
+
+    <TextView
+        android:id="@+id/tv_offPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="$250.00"
+        android:textColor="@color/color_realPrice"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/tv_Price"
+        app:layout_constraintTop_toBottomOf="@id/tv_kindOfClothe" />
+
+    <TextView
+        android:id="@+id/tv_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/xsmall"
+        android:fontFamily="@font/quicksand_medium"
+        android:gravity="left"
+        android:text="The first mate and his kipper \n in their islanded nest"
+        android:textColor="@color/color_textShop"
+        android:textSize="@dimen/small"
+        app:layout_constraintStart_toStartOf="@id/tv_Price"
+        app:layout_constraintTop_toBottomOf="@id/tv_Price" />
+
+    <Button
+        android:layout_marginTop="@dimen/xsmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/xsmall"
+        android:background="@drawable/shape_shopping"
+        android:drawableStart="@drawable/ic_shop"
+        android:drawablePadding="@dimen/xsmall"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="add to cart"
+        app:layout_constraintStart_toStartOf="@id/tv_intro"
+        app:layout_constraintTop_toBottomOf="@id/tv_intro" />
+    />
+</androidx.constraintlayout.widget.ConstraintLayout>
