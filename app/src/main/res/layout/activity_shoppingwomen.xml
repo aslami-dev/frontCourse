@@ -12,29 +12,31 @@
         android:layout_height="?actionBarDivider"
         app:layout_constraintTop_toTopOf="parent"
         app:menu="@menu/toolbar_menu"
-        app:title="women`s"
- app:navigationIcon="@drawable/ic_back"
-        />
+        app:navigationIcon="@drawable/ic_back"
+        app:title="women`s" />
 
-    <include
-        android:id="@+id/menu"
-        layout="@layout/layout_menu"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/list_menu"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/view_toolbar"
-        tools:layout_editor_absoluteX="0dp" />
+        android:layout_height="?actionBarDivider"
+app:layout_constraintTop_toBottomOf="@id/view_toolbar"
+        app:menu="@menu/list_menu"
+        app:title="Clothings" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-        app:layout_constraintTop_toBottomOf="@id/menu"
+        app:layout_constraintBottom_toTopOf="@id/footer"
+        app:layout_constraintTop_toBottomOf="@id/list_menu"
         app:spanCount="2"
         tools:itemCount="4"
+        tools:layout_editor_absoluteX="0dp"
         tools:listitem="@layout/card_women" />
 
     <include
+        android:id="@+id/footer"
         layout="@layout/layout_footer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
