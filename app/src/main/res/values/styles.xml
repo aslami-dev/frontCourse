@@ -8,25 +8,95 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-
-    <style name="buttons_style">
-       <item name="android:background">@drawable/shape_button</item>
-       <item name="android:textColor">@color/button_txtColor</item>
-       <item name="android:textSize">@dimen/button_textSize</item>
-       <item name="fontFamily">@font/opensans_semibold</item>
-       <item name="android:fontFamily">@font/opensans_semibold</item>
+    
+    <style name="accessory_title_txt">
+        <item name="android:layout_marginTop">@dimen/xxxlarge</item>
+        <item name="android:titleMarginBottom">@dimen/xlarge</item>
+        <item name="android:textColor">@color/title_color</item>
+        <item name="android:textSize">@dimen/xxlarge</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="accessory_body_txt">
+        <item name="android:titleMarginBottom">@dimen/xxlarge</item>
+        <item name="android:text">@string/text_body</item>
+        <item name="android:textColor">@color/body_color</item>
+        <item name="android:textSize">@dimen/large</item>
+    </style>
+
+    <style name="btn_style">
+        <item name="android:width">0dp</item>
+        <item name="android:textSize">@dimen/xlarge</item>
+        <item name="android:textColor">@color/button_disabled_stroke</item>
+    </style>
 
     <style name="divider_style">
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">@dimen/height_divider_large</item>
-        <item name="android:layout_weight">1</item>
         <item name="android:background">@drawable/shape_divider</item>
     </style>
 
+    <style name="cardview_style">
+        <item name="android:layout_weight">1</item>
+        <item name="android:height">0dp</item>
+    </style>
 
+    <style name="cardview_title">
+        <item name="android:titleMargin">@dimen/standard</item>
+        <item name="android:textColor">@color/color_category_text_body</item>
+        <item name="android:textSize">@dimen/large</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
 
+    <style name="footer_menu">
+        <item name="android:width">0dp</item>
+        <item name="android:background">#fff</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+<!--             women layout          -->
+    <style name="product_name">
+        <item name="android:height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/xlarge</item>
+        <item name="android:textColor">@color/background</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 
-
+    <style name="discounted_price">
+        <item name="android:width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/price_color</item>
+        <item name="android:textSize">@dimen/large</item>
+        <item name="android:text">@string/price</item>
+    </style>
+    <style name="price">
+        <item name="android:width">0dp</item>
+        <item name="android:layout_weight">1</item>
+       <item name="android:text">@string/offed_price</item>
+       <item name="android:textColor">@color/color_offed_price</item>
+       <item name="android:textSize">@dimen/large</item>
+    </style>
+    <style name="product_desc">
+        <item name="android:width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/background</item>
+    </style>
+    <style name="btn_add_to_cart">
+        <item name="android:height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/shape_addtocart</item>
+        <item name="android:textSize">@dimen/standard</item>
+        <item name="android:textColor">@color/background</item>
+        <item name="android:drawableStart">@drawable/ic_cart</item>
+        <item name="android:paddingStart">@dimen/large</item>
+        <item name="android:paddingEnd">@dimen/large</item>
+    </style>
 </resources>
+
+
+
+
+
+
+

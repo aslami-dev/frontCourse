@@ -4,19 +4,24 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
 
+    <!-- default background color -->
+    <color name="background">#000</color>
 
-    <color name="title_txtColor">#23203f</color>
-    <color name="body_txtColor">#716f87</color>
-    <color name="divider_color">#6a90f2</color>
-    <color name="dividerDisable_color">#dddddd</color>
-    <color name="footer_color">#ffffff</color>
-    <color name="footerShape_color">#000000</color>
-    <color name="background_color">#ffffff</color>
+    <!-- texts color -->
+    <color name="title_color">#ffffff</color>
+    <color name="body_color">#fefefe</color>
 
-    <color name="buttonColor">#6a90f2</color>
-    <color name="button_pressedColor">#2B468E</color>
-    <color name="RatingColor">#6a90f2</color>
-    <color name="feedbackCancel_txtColor">#9a98a8</color>
-    <color name="button_txtColor">#fff</color>
+    <!--- button colors -->
+    <color name="button_disabled_color">#a4a4a4</color>
+    <color name="button_enabled_color">#1c1c1c</color>
+    <color name="button_enabled_stroke_color">#ffffff</color>
+    <color name="button_enabled">#fff</color>
+    <color name="button_disabled_stroke">#fff</color>
 
+    <!-- font colors -->
+    <color name="color_actionbar_title">#000</color>
+    <color name="color_category_text_body">#202020</color>
+    <color name="price_color">#e0e0e0</color>
+    <color name="color_offed_price">#3943f3</color>
+    <color name="cart_shape_color">#3b41ef</color>
 </resources>

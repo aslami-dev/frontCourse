@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="@dimen/xxlarge"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/shadow"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:background="#6f4557"
+        android:rotation="75"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pink_access"
+        app:layout_constraintBottom_toBottomOf="@id/shadow"
+        app:layout_constraintEnd_toEndOf="@id/shadow"
+        app:layout_constraintStart_toStartOf="@id/shadow"
+        app:layout_constraintTop_toTopOf="@id/shadow" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/footer"
+        app:layout_constraintTop_toBottomOf="@id/shadow">
+        <TextView
+            android:id="@+id/accessory_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_title"
+            style="@style/accessory_title_txt"
+            app:layout_constraintTop_toBottomOf="@id/shadow" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           style="@style/accessory_body_txt"
+            app:layout_constraintTop_toBottomOf="@id/accessory_title" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="@dimen/xxlarge"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btn_skip"
+            android:layout_height="match_parent"
+            style="@style/btn_style"
+            android:background="@drawable/shape_button"
+            android:enabled="false"
+            android:text="@string/text_btn_skip"
+             />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@id/btn_next"
+            app:layout_constraintStart_toStartOf="@id/btn_skip">
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                style="@style/divider_style"
+                android:layout_marginEnd="@dimen/xlarge"
+                android:enabled="false" />
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="@dimen/xlarge"
+                style="@style/divider_style"
+                android:enabled="false" />
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                style="@style/divider_style"
+                android:enabled="true" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_button"
+            android:enabled="true"
+            android:text="@string/text_btn_next"
+            style="@style/btn_style"
+            android:textColor="@color/button_enabled"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

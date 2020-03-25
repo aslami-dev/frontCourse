@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--- margin and paddings -->
+<resources>
+    <dimen name="xxlarge">32dp</dimen>
+    <dimen name="xxxlarge">64dp</dimen>
+    <dimen name="xlarge">22dp</dimen>
+    <dimen name="large">16dp</dimen>
+    <dimen name="standard">8dp</dimen>
+    <dimen name="min">5dp</dimen>
+    <dimen name="radius_circle_shape">120dp</dimen>
+    <dimen name="button_enabled_stroke">5dp</dimen>
+    <dimen name="button_stroke">3dp</dimen>
+    <dimen name="small">5dp</dimen>
+    <dimen name="radius_add_to_cart">24dp</dimen>
+</resources>

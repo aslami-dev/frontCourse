@@ -1,12 +1,19 @@
-<?xml version="1.0"?>
 <resources>
+    <string name="app_name">quiz_1</string>
 
-    <string name="title_homeActivity">title</string>
-    <string name="feedback_title">feedback_title</string>
-    <string name="submit">submit</string>
-    <string name="feedback_cancel_text">feedback_cancel_text</string>
-    <string name="intro_welcome_title">intro_welcome_title</string>
-    <string name="intro_welcome_body">intro_welcome_body</string>
-    <string name="app_name">front cource test</string>
-    <string name="search">search</string>
+    <!-- title and bosy texts -->
+    <string name="text_body">The first mate and his Skipper too will\n do their very comfortable in their islanded\nto till the done end.</string>
+    <string name="text_title">Accessories</string>
+
+    <!-- button names -->
+    <string name="text_btn_next">NEXT</string>
+    <string name="text_btn_skip">SKIP</string>
+    <string name="text_women_category">WOMEN\'S</string>
+    <string name="text_men_cat">MEN\'S</string>
+    <string name="text_accessories">ACCESSORIE\'S</string>
+    <string name="category_layout_header">CATEGORIES</string>
+    <string name="women_layout_header">WOMEN</string>
+    <string name="price">$265.00</string>
+    <string name="offed_price">$250.00</string>
+    <string name="product_desc">The first mate and his kipper in their islanded nest.</string>
 </resources>
