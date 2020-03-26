@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/large"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_height="match_parent"
+        style="@style/footer_menu"
+        />
+    <Button
+        style="@style/footer_menu"
+        android:layout_height="match_parent"
+        android:drawableStart="@drawable/ic_home" />
+    <Button
+        style="@style/footer_menu"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/xlarge"
+        android:drawableStart="@drawable/ic_favorite" />
+    <Button
+        style="@style/footer_menu"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/xlarge"
+        android:drawableStart="@drawable/ic_account" />
+    <Button
+        style="@style/footer_menu"
+        android:layout_height="match_parent"
+        android:drawableEnd="@drawable/ic_settings" />
+    <TextView
+        style="@style/footer_menu"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>
